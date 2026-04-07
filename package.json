@@ -15,9 +15,11 @@
     "@iconify-json/simple-icons": "^1.2.75",
     "@nuxt/ui": "^4.6.0",
     "nuxt": "^4.4.2",
-    "tailwindcss": "^4.2.2"
+    "tailwindcss": "^4.2.2",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
+    "@iconify-json/grommet-icons": "^1.2.4",
     "@nuxt/eslint": "^1.15.2",
     "eslint": "^10.1.0",
     "typescript": "^6.0.2",
