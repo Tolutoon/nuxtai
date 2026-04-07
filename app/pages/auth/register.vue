@@ -72,6 +72,9 @@
 						Create account
 					</UButton>
 				</UForm>
+        <div class="text-center text-sm">Already have an accoount?
+          <UButton variant="link" color="primary" :disabled="false" to="/auth/login" class="-ml-2">Sign in</UButton>
+        </div>
 			</div>
 		</UCard>
 	</UContainer>
@@ -105,11 +108,11 @@ const state = reactive<Partial<Schema>>({
 const toast = useToast();
 
 async function onSubmit(event: FormSubmitEvent<Schema>) {
-	toast.add({
-		title: "Success",
-		description: "The form has been submitted.",
-		color: "success",
-	});
+	// toast.add({
+	// 	title: "Success",
+	// 	description: "The form has been submitted.",
+	// 	color: "success",
+	// });
 
 	console.log(event.data);
 }
