@@ -83,6 +83,7 @@
 <script setup lang="ts">
 import * as z from "zod";
 import type { FormSubmitEvent } from "@nuxt/ui";
+import { useAuth } from "~/composables/useAuth";
 
 const schema = z
 	.object({
@@ -105,15 +106,14 @@ const state = reactive<Partial<Schema>>({
 	// confirmPassword: "",
 });
 
-const toast = useToast();
-
+const { signInEmail } = useAuth()
 async function onSubmit(event: FormSubmitEvent<Schema>) {
-	// toast.add({
-	// 	title: "Success",
-	// 	description: "The form has been submitted.",
-	// 	color: "success",
-	// });
-
-	console.log(event.data);
+	const {error} = await signInEmail.email({
+		email: event.data.email,
+		password: event.data.password,
+		callbackURL: '/'
+	})
+	console.log(error);
 }
+
 </script>

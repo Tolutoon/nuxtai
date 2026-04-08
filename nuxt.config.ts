@@ -27,10 +27,10 @@ export default defineNuxtConfig({
 		},
 	},
 	runtimeConfig: {
-		tursoDatabaseUrl: "",
-		tursoAuthToken: "",
+		tursoDatabaseUrl: process.env.TURSO_DATABASE_URL || "",
+		tursoAuthToken: process.env.TURSO_AUTH_TOKEN || "",
 		public: {
-			appEnv: "",
-		}
+			appEnv: process.env.NUXT_PUBLIC_APP_ENV || "development",
+		},
 	},
 });
