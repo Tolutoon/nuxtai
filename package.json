@@ -13,8 +13,14 @@
   "dependencies": {
     "@iconify-json/lucide": "^1.2.100",
     "@iconify-json/simple-icons": "^1.2.75",
+    "@libsql/client": "^0.17.2",
     "@nuxt/ui": "^4.6.0",
+    "@prisma/adapter-libsql": "^7.7.0",
+    "@prisma/adapter-pg": "^7.7.0",
+    "@prisma/client": "^7.7.0",
+    "better-auth": "^1.6.0",
     "nuxt": "^4.4.2",
+    "pg": "^8.20.0",
     "tailwindcss": "^4.2.2",
     "zod": "^4.3.6"
   },
@@ -22,6 +28,7 @@
     "@iconify-json/grommet-icons": "^1.2.4",
     "@nuxt/eslint": "^1.15.2",
     "eslint": "^10.1.0",
+    "prisma": "^7.7.0",
     "typescript": "^6.0.2",
     "vue-tsc": "^3.2.6"
   },
