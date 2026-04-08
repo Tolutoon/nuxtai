@@ -26,4 +26,11 @@ export default defineNuxtConfig({
 			},
 		},
 	},
+	runtimeConfig: {
+		tursoDatabaseUrl: "",
+		tursoAuthToken: "",
+		public: {
+			appEnv: "",
+		}
+	},
 });
