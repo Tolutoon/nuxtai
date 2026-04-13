@@ -30,6 +30,7 @@
 						class="justify-center"
 						:loading="false"
 						:disabled="false"
+						@click="signInEmail.social({provider: 'google', callbackURL: '/'})"
 					>
 						Google
 					</UButton>

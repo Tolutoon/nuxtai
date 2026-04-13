@@ -2,7 +2,7 @@ import { betterAuth } from "better-auth";
 import { prismaAdapter } from "better-auth/adapters/prisma";
 import prisma from "../utils/prisma";
 
-const { githubClientId, githubClientSecret } = useRuntimeConfig();
+const { githubClientId, githubClientSecret, googleClientId, googleSecret } = useRuntimeConfig();
 export const auth = betterAuth({
     database: prismaAdapter(prisma, {
         provider: "sqlite",
@@ -11,9 +11,12 @@ export const auth = betterAuth({
         enabled: true,
     },
     socialProviders: {
-        github: { 
-            clientId: githubClientId, 
-            clientSecret: githubClientSecret, 
-        }, 
+        github: {
+            clientId: githubClientId,
+            clientSecret: githubClientSecret,
+        }, google: {
+            clientId: googleClientId,
+            clientSecret: googleSecret,
+        },
     },
 });

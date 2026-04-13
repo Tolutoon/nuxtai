@@ -31,6 +31,8 @@ export default defineNuxtConfig({
 		tursoAuthToken: process.env.TURSO_AUTH_TOKEN || "",
 		githubClientId: process.env.GITHUB_CLIENT_ID || "",
 		githubClientSecret: process.env.GITHUB_CLIENT_SECRET || "",
+		googleClientId: process.env.GOOGLE_CLIENT_ID || "",
+		googleSecret: process.env.GOOGLE_CLIENT_SECRET || "",
 		public: {
 			appEnv: process.env.NUXT_PUBLIC_APP_ENV || "development",
 		},
