@@ -29,6 +29,8 @@ export default defineNuxtConfig({
 	runtimeConfig: {
 		tursoDatabaseUrl: process.env.TURSO_DATABASE_URL || "",
 		tursoAuthToken: process.env.TURSO_AUTH_TOKEN || "",
+		githubClientId: process.env.GITHUB_CLIENT_ID || "",
+		githubClientSecret: process.env.GITHUB_CLIENT_SECRET || "",
 		public: {
 			appEnv: process.env.NUXT_PUBLIC_APP_ENV || "development",
 		},

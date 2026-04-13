@@ -18,6 +18,7 @@
 						class="justify-center"
 						:loading="false"
 						:disabled="false"
+						@click="signInEmail.social({provider: 'github', callbackURL: '/'})"
 					>
 						Github
 					</UButton>

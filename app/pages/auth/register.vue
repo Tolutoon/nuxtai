@@ -108,7 +108,7 @@ const state = reactive<Partial<Schema>>({
 
 const toast = useToast();
 
-const { signUpEmail } = useAuth()
+const { signUpEmail, signInEmail } = useAuth()
 async function onSubmit(event: FormSubmitEvent<Schema>) {
 	const {error} = await signUpEmail.email({
 		name: event.data.name,
